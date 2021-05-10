@@ -134,7 +134,7 @@ func main() {
 	var err error
 	for {
 		elasticClient, err = elastic.NewClient(
-			elastic.SetURL("http://172.16.10.230:9200", "http://172.16.10.231:9200", "http://172.16.10.232:9200"),
+			elastic.SetURL("http://es-cn-7pp25ypc5000r3hdy.elasticsearch.aliyuncs.com:9200"),
 			elastic.SetSniff(false),
 		)
 		if err != nil {
