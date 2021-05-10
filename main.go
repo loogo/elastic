@@ -135,6 +135,7 @@ func main() {
 	for {
 		elasticClient, err = elastic.NewClient(
 			elastic.SetURL("http://es-cn-7pp25ypc5000r3hdy.elasticsearch.aliyuncs.com:9200"),
+			elastic.SetBasicAuth("elastic", "Dyrs2021"),
 			elastic.SetSniff(false),
 		)
 		if err != nil {
